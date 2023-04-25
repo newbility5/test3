@@ -27,8 +27,6 @@
 
 [連結](http://example.com)
 
-![圖](Icon-pictures.png "icon")
-
 > Markdown使用電郵用字元「>」來引用。
 
 行間<abbr title="Hypertext Markup Language">HTML</abbr>亦受支援。
