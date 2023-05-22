@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css" />
+<style>#page_list,#page_nav{list-style-type:none}body{background-color:#fafafa}#title{text-decoration:none}#subtitle-icon{font-size:18px}#page_list{margin:0;padding:0}#page_nav_container{width:100%;text-align:center;justify-content:center;align-items:center}#page_nav{display:inline-flex}</style>
+<title>{:site.name}</title>
+</head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink">
+<div class="mdui-appbar mdui-appbar-fixed">
+<div class="mdui-toolbar mdui-color-theme">
+<div class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#drawer', swipe: true}">
+<i class="mdui-icon material-icons">menu</i>
+</div>
+<a href="{:site.url}" class="mdui-typo-headline">{:site.name}</a>
+</div>
+</div>
+<div class="mdui-drawer" id="drawer">
+<div class="mdui-list" mdui-collapse="{accordion: true}">
+<div class="mdui-p-t-0 mdui-m-x-2 mdui-textfield mdui-textfield-floating-label">
+<label for="search" class="mdui-textfield-label">搜索</label>
+<input id="search" class="mdui-textfield-input" type="text" autocomplete="new-password" onkeydown="search(event)" />
+</div>
+<div class="mdui-divider"></div>
