@@ -1,3 +1,5 @@
 </div>
+<script src="https://fastly.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script>
+<script>function search(e){if(e.defaultPrevented||"Enter"!==e.key)return;let t=e.target.value;""!==t&&(location.href="{:site.url}/search?keyword="+t),e.preventDefault()}const pageList=document.getElementById("page_list");if(pageList){let e=pageList.children;for(let t=0;t<e.length;t++){let i=e.item(t).firstChild;i.classList.add("mdui-list-item","mdui-ripple");let l=i.innerHTML;i.innerHTML=`<i class="mdui-list-item-icon mdui-icon material-icons">description</i><div class="mdui-list-item-content mdui-m-r-4">${l}</div>`}}const pageNav=document.getElementById("page_nav");if(pageNav){pageNav.classList.add("mdui-btn-group");let a=pageNav.children;for(let d=0;d<a.length;d++){let s=a.item(d).firstChild;s.classList.add("mdui-btn","mdui-ripple","mdui-text-color-theme-accent")}document.getElementById("current").firstChild.classList.add("mdui-btn-active")}</script>
 </body>
 </html>
